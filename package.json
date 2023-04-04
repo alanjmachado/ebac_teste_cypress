@@ -1,0 +1,26 @@
+{
+  "name": "ebac_teste_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanjmachado/ebac_teste_cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanjmachado/ebac_teste_cypress/issues"
+  },
+  "homepage": "https://github.com/alanjmachado/ebac_teste_cypress#readme",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  },
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}
