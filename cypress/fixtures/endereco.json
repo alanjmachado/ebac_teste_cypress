@@ -39,7 +39,17 @@
         "cep": "00111111",
         "telefone": "47999999999",
         "email": "ebac@ebac.com"
+    },
+
+    {
+        "nome": "Ernesto",
+        "sobrenome": "Geisel",
+        "empresa": "Bandeirande",
+        "endereço": "Av Com Saida",
+        "numero": "1",
+        "pais": "Brasil",
+        "cidade": "Brusque",
+        "estado": "Santa Catarina",
+        "cep": "00111111"
     }
-
-
 ]

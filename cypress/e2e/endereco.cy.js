@@ -18,17 +18,37 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
 
     it('Deve fazer cadastro de faturamento com sucesso - Usando arquivo de dados', () => {
         EnderecoPage.editarEnderecoFaturamento(
-            dadosEndereco[1].nome,
-            dadosEndereco[1].sobrenome,
-            dadosEndereco[1].empresa,
-            dadosEndereco[1].pais,
-            dadosEndereco[1].endereço,
-            dadosEndereco[1].numero,
-            dadosEndereco[1].cidade,
-            dadosEndereco[1].estado,
-            dadosEndereco[1].cep,
-            dadosEndereco[1].telefone,
-            dadosEndereco[1].email
+            dadosEndereco[0].nome,
+            dadosEndereco[0].sobrenome,
+            dadosEndereco[0].empresa,
+            dadosEndereco[0].pais,
+            dadosEndereco[0].endereço,
+            dadosEndereco[0].numero,
+            dadosEndereco[0].cidade,
+            dadosEndereco[0].estado,
+            dadosEndereco[0].cep,
+            dadosEndereco[0].telefone,
+            dadosEndereco[0].email
+            )
+        cy.get('.woocommerce-message').should('contain' , 'Endereço alterado com sucesso.')        
+    });
+
+    it('Deve fazer cadastro de entrega com sucesso', () => {
+        EnderecoPage.editarEnderecoEntrega('Chico', 'Bento', 'TIM', 'Brasil', 'Rua Infinita Highway', '1', 'Canoas', 'Rio Grande do Sul', '11111111')
+        cy.get('.woocommerce-message').should('contain' , 'Endereço alterado com sucesso.')       
+    });
+
+    it.only('Deve fazer cadastro de entrega com sucesso - Usando arquivo de dados', () => {
+        EnderecoPage.editarEnderecoFaturamento(
+            dadosEndereco[3].nome,
+            dadosEndereco[3].sobrenome,
+            dadosEndereco[3].empresa,
+            dadosEndereco[3].pais,
+            dadosEndereco[3].endereço,
+            dadosEndereco[3].numero,
+            dadosEndereco[3].cidade,
+            dadosEndereco[3].estado,
+            dadosEndereco[3].cep,
             )
         cy.get('.woocommerce-message').should('contain' , 'Endereço alterado com sucesso.')        
     });
